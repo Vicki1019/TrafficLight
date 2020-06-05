@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
         //設定螢幕為橫式
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_main);
+        while() {
+            Toast.makeText(this, "燈號的秒數不能為空白",Toast.LENGTH_SHORT).show();
+        }
+        }
     }
     public void StartGame(View v){
         Intent it = new Intent();
